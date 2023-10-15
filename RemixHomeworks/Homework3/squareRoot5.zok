@@ -1,0 +1,7 @@
+// Example from https://zokrates.github.io/gettingstarted.html
+// Exercise 1: Use the example file to generate a proof to show that a
+//prover knows the square root of 25.
+def main(private field a, field b) {
+	assert(a * a == b);
+	return;
+}

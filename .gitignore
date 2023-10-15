@@ -42,3 +42,10 @@ myenv/
 .DS_Store
 *.swp
 *~
+
+
+# Ignore node modules
+node_modules/
+proof.json
+verification_key.json
+

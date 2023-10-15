@@ -1,0 +1,22 @@
+
+//Exercise 4: In principle how could you use Zokrates to verify that a
+//certain address on Ethereum has more than say 1 ETH ?
+
+//This is just a pseudCode and thus it doesn't compile
+def main(private field merkleProofComponents[], field balance) {
+
+    // Validate the Merkle Patricia Trie proof with the provided components
+    field isValidProof = validateMerkleProof(merkleProofComponents);
+
+    // Assert that the Merkle proof is valid
+    assert(isValidProof == 1);
+
+    // Convert 1 ETH to its smallest unit (wei) for comparison: 1 ETH = 10^18 wei
+    field oneEthInWei = 1000000000000000000;
+
+    // Assert that the balance is greater than 1 ETH
+    assert(balance > oneEthInWei);
+
+    // Return a success flag
+    return 1;
+}
