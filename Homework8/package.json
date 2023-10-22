@@ -1,0 +1,9 @@
+{
+  "name": "Zkapp-cli-soduku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "zkapp-cli": "^0.13.1"
+  }
+}
